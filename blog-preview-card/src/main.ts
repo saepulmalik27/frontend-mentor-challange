@@ -16,14 +16,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
    <img src="${blogImg}" alt="banner" class="card-header" >
    
    <div class="card-content">
-   <div class="content-tag text-sm text">${content.category}</div>
-   <p class="text-sm text">${content.publishedAt}</p>
-    <h2 class="text-xl text">${content.title}</h2>
-    <p class="text-base text">${content.description}</p>
+   <div class="content-tag text-sm">${content.category}</div>
+   <p class="text-sm">${content.publishedAt}</p>
+    <h2 class="text-xl">${content.title}</h2>
+    <p class="text-base description">${content.description}</p>
    </div>
     <div class="card-footer">
       <img src="${avatarImg}" alt="avatar" class="avatar">
-      <p class="author text">${content.author}</p>
+      <p class="author">${content.author}</p>
     </div>
   </div>
 `

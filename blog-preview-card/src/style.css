@@ -23,9 +23,6 @@ body {
   font-family: "Figtree", sans-serif;
   background-color: var(--color-yellow);
   color : var(--color-gray-950);
-}
-
-.text{
   font-weight: 500;
   line-height: 150%;
 }
@@ -114,6 +111,10 @@ main {
   font-size : var(--text-preset-3);
 }
 
+.description{
+  color : var(--color-gray-500);
+}
+
 
 /* Media Queries */
 @media (min-width: 376px) {
@@ -128,9 +129,6 @@ main {
   }
   .text-base {
     font-size: var(--text-preset-2);
-  }
-  .card-content {
-    gap: var(--spacing-200);
   }
 }
 
