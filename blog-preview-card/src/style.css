@@ -25,6 +25,11 @@ body {
   color : var(--color-gray-950);
 }
 
+.text{
+  font-weight: 500;
+  line-height: 150%;
+}
+
 main {
   display: flex;
   justify-content: center;
