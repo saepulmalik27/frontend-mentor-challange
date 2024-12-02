@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --color-yellow: rgba(244, 208, 78, 1);
+  --color-gray-950: rgba(17, 17, 17, 1);
+  --color-gray-500: rgba(107, 107, 107, 1);
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 24px;
+  --text-preset-1: 24px;
+  --text-preset-2: 16px;
+  --text-preset-3: 14px;
+  --text-preset-4: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--color-yellow);
+  color : var(--color-gray-950);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 327px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 20px;
+  padding: var(--spacing-200);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  flex-shrink: 0;
+ 
+}
+
+
+.card-shadow{
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.content-tag {
+  width: fit-content;
+  background-color: var(--color-yellow);
+  border-radius: 4px;
+  display: flex;
+  padding: var(--spacing-50) var(--spacing-150);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  font-weight : 800;
+}
+
+.text-sm {
+  font-size : var(--text-preset-4);
+  
+}
+.text-xl {
+  font-size : 20px;
+  
+}
+
+.text-base{
+  font-size : var(--text-preset-3);
+
+}
+
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-150);
+}
+
+
+
+.card-footer{
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.author{
+  font-weight: 800;
+  font-size : var(--text-preset-3);
+}
+
+
+/* Media Queries */
+@media (min-width: 376px) {
+  .card {
+    width: 384px;
+  }
+  .text-sm {
+    font-size: var(--text-preset-3);
+  }
+  .text-xl {
+    font-size: var(--text-preset-1);
+  }
+  .text-base {
+    font-size: var(--text-preset-2);
+  }
+  .card-content {
+    gap: var(--spacing-200);
+  }
+}
+
