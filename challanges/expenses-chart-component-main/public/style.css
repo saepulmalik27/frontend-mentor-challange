@@ -1,0 +1,134 @@
+/* Colors */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    --card-white : #FFFBF6;
+    --spacing-1 : 8px;
+    --spacing-2 : 12px;
+    --spacing-3 : 16px;
+    --spacing-4 : 20px;
+    --active-red : hsla(10, 100%, 76%, 1);
+    --active-cyan : hsla(186, 49%, 80%, 1);
+}
+
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    background-color: var(--cream);
+    min-height: 100vh;
+    padding: var(--spacing-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-2xl{
+    font-size : 30px;
+}
+
+.text-xl{
+    font-size : 24px;
+}
+
+.text-lg{
+    font-size : 20px;
+}
+
+.text-base{
+    font-size : 18px;
+}
+
+.text-sm{
+    font-size : 15px;
+}
+
+.text-medium-brown {
+    color: var(--medium-brown);
+}
+
+
+.container{
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3)
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.balance {
+    background-color: var(--soft-red);
+    color: white;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--card-white);
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+.gap-1{
+    gap: 4px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+    .lg\:text-base{
+        font-size: 18px;
+    }
+
+    .lg\:text-3xl{
+        font-size: 32px;
+    }
+
+    .lg\:text-4xl{
+        font-size: 48px;
+    }
+
+    .container{
+        width:540px;
+    }
+
+
+}

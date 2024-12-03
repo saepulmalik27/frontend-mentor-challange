@@ -1,0 +1,21 @@
+.oval {
+    border-radius: 50%;
+   content : " ";
+   width ; 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+
+.oval-1 {
+    background-color: transparent;
+    border: 2px solid white;
+    position: relative;
+    z-index: 1;
+}
+
+.oval-2 {
+    background-color: var(--dark-brown);
+    border: 2px solid var(--dark-brown);
+    margin-left: -20px;
+    z-index: 0;
+}

@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "es6",
+      "strict": true,
+      "outDir": "../public",
+      "rootDir": "./",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+    },
+    "include": ["main.ts"]
+  }

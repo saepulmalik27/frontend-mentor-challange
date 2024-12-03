@@ -1,0 +1,33 @@
+.card {
+    border-radius: 10px;
+    padding: var(--spacing-4);
+}
+
+.card-content {
+    display : flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card-divider{
+    height :2px;
+    background-color: #F8E9DD;
+    border-radius: 1px;
+    border: none;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding : 40px;
+    }
+
+    .card-content {
+        gap: 32px;
+    }
+}

@@ -1,0 +1,86 @@
+.chart{
+    margin-top: calc(57px);
+    display: flex;
+    flex-direction: row;
+    gap : var(--spacing-2);
+}
+.chart-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap : 11px;
+}
+
+.chart-bar{
+    height: 150px;
+    width: 33px;
+    display : flex;
+    align-items: flex-end;
+}
+.chart-label{
+    font-size : 12px;
+    text-align: center;
+    user-select: none;
+    text-transform: capitalize;
+}
+
+.bar{
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--soft-red);
+}
+
+.bar-highest{
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--cyan);
+}
+
+.bar-highest:hover{
+    background-color: var(--active-cyan);
+}
+
+.bar:hover{
+    cursor : pointer;
+    background-color: var(--active-red);
+}
+
+.bar::after,
+.bar-highest::after {
+    content: attr(data-value);
+    position: absolute;
+    top: -50px;
+    transform: translateX(-19%);
+    padding: 8px;
+    font-size: 18px;
+    background-color: var(--dark-brown);
+    color: var(--card-white);
+    font-weight: 700;
+    border-radius: 5px;
+    display: none;
+}
+
+.bar:hover::after,
+.bar-highest:hover::after {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    .chart{
+        gap : 18px;
+    }
+
+    .chart-bar{
+        width: 50px;
+    }
+
+    .chart-label{
+        font-size : 15px;
+    }
+
+    .chart-container{
+        gap : 8px;
+    }
+}

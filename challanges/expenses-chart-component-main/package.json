@@ -1,0 +1,14 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "scripts": {
+    "dev" : "tsc -w -p src/tsconfig.json & live-server public",
+    "build": "tsc -p src/tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
