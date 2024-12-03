@@ -1,0 +1,8 @@
+{
+    "private": true,
+    "name": "frontend-mentor-challenge",
+    "version": "1.0.0",
+    "workspaces": [
+      "challanges/*"
+    ]
+  }
