@@ -82,7 +82,6 @@ export default {
   	}
   },
   plugins: [
-    require("tailwindcss-animate"),
     function ({  addComponents }) {
       addComponents({
         ".text-preset-1": {
