@@ -1,0 +1,62 @@
+/* Importing the Outfit font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: hsl(212, 45%, 89%);
+    color: hsl(218, 44%, 22%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    padding: 16px;
+    display : flex;
+    flex-direction: column;
+    gap : 32px;
+}
+
+/* Image styling */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Heading styling */
+.card-content h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(218, 44%, 22%);
+}
+
+/* Paragraph styling */
+.card p {
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    line-height: 1.5;
+    font-size: 1rem;
+    padding : 16px;
+}
