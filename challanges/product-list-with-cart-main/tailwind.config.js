@@ -82,6 +82,7 @@ export default {
   	}
   },
   plugins: [
+    require("tailwindcss-animate"),
     function ({  addComponents }) {
       addComponents({
         ".text-preset-1": {
@@ -101,7 +102,6 @@ export default {
           "line-height": "150%",
         },
       });
-    },
-      require("tailwindcss-animate")
+    }
 ],
 };
