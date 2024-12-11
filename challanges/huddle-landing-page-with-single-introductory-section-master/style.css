@@ -202,6 +202,7 @@ main{
     .footer{
        grid-column: span 2 / span 2;
        padding: 20px 0;
+       justify-content: flex-end;
     }
 }
 
